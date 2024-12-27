@@ -1,3 +1,11 @@
-body{
+.fontPoppins{
     font-family: "Poppins", serif;
+    /* color: #20b2aa; */
+}
+
+.fontAnton{
+    font-family: "Anton", serif;  
+}
+.scoreBoxBackground{
+    background: linear-gradient(121deg, rgba(255, 255, 255, 0.56) 0%, rgba(152, 151, 151, 0.00) 102.2%)
 }
