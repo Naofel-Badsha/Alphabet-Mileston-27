@@ -31,25 +31,30 @@
     <main
       class="bg-[#010313] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center"
     >
-      <!----------------1-------------->
-      <section class="home hidden">
+      <!-----------HomeScreen-------------->
+      <section class="home" id="home-screen">
         <h1
           class="text-8xl text-center pt-[200px] text-[9rem] font-bold text-white fontAnton"
         >
           ALPHABET CLASH
         </h1>
 
-        <h3 class="text-center text-2xl mt-5 text-white border-0">
+        <h3 class="text-center text-2xl mt-10 text-white border-0">
           Unleash Your Keyboard Kung Fu : Press “Enter” to Play
         </h3>
         <div class="flex item-center justify-center mt-10">
-          <button class="btn bg-[#fff] hover:bg-[#ff7f50] text-black">
-            Play Now
-          </button>
+          <div class="py-5 m-auto">
+            <button
+              onclick="play()"
+              class="btn text-2xl border-0 bg-white text-black hover:bg-black hover:text-white px-6"
+            >
+              Play Now
+            </button>
+          </div>
         </div>
       </section>
-      <!----------------2-------------->
-      <section class="play-ground hidden">
+      <!-----------PlayGround------------>
+      <section class="hidden" id="play-ground">
         <div>
           <!----------Screen--------->
           <div class="pt-20">
@@ -65,122 +70,127 @@
               </div>
 
               <div class="flex item-center justify-center mt-[50px]">
-                <h1 class="text-[#2F2941] text-8xl font-bold">Y</h1>
+                <h1
+                  id="current-alphabet"
+                  class="text-[#2F2941] text-8xl font-bold uppercase"
+                >
+                  Y
+                </h1>
               </div>
             </div>
           </div>
           <!----------KetBord------Start-------->
           <div class="mt-20">
             <div class="my-1 flex w-full justify-center gap-1">
-              <kbd
+              <kbd id="q" 
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >q</kbd
               >
-              <kbd
+              <kbd id="w"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >w</kbd
               >
-              <kbd
+              <kbd id="e"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >e</kbd
               >
-              <kbd
+              <kbd id="r"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >r</kbd
               >
-              <kbd
+              <kbd id="t"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >t</kbd
               >
-              <kbd
+              <kbd id="y"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >y</kbd
               >
-              <kbd
+              <kbd id="u"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >u</kbd
               >
-              <kbd
+              <kbd id="i"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >i</kbd
               >
-              <kbd
+              <kbd id="o"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >o</kbd
               >
-              <kbd
+              <kbd id="p"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >p</kbd
               >
             </div>
             <div class="my-1 flex w-full justify-center gap-1 mt-4">
-              <kbd
+              <kbd id="a"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >a</kbd
               >
-              <kbd
+              <kbd id="s"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >s</kbd
               >
-              <kbd
+              <kbd id="d"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >d</kbd
               >
-              <kbd
+              <kbd id="f"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >f</kbd
               >
-              <kbd
+              <kbd id="g"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >g</kbd
               >
-              <kbd
+              <kbd id="h"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >h</kbd
               >
-              <kbd
+              <kbd id="j"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >j</kbd
               >
-              <kbd
+              <kbd id="k"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >k</kbd
               >
-              <kbd
+              <kbd id="l"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >l</kbd
               >
             </div>
             <div class="my-1 flex w-full justify-center gap-1 mt-4">
-              <kbd
+              <kbd id="z"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >z</kbd
               >
-              <kbd
+              <kbd id="x"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >x</kbd
               >
-              <kbd
+              <kbd id="c"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >c</kbd
               >
-              <kbd
+              <kbd id="v"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >v</kbd
               >
-              <kbd
+              <kbd id="b"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >b</kbd
               >
-              <kbd
+              <kbd id="n"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >n</kbd
               >
-              <kbd
+              <kbd id="m"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >m</kbd
               >
-              <kbd
+              <kbd id="/"
                 class="kbd bg-white text-black text-xl font-bold hover:bg-[#20b2aa] hover:text-white cursor-pointer mx-1"
                 >/</kbd
               >
@@ -230,13 +240,13 @@
           </div>
         </div>
       </section>
-      <!----------------3-------------->
-      <section class="score">
+      <!-----------ScoreBord------------->
+      <section class="score hidden">
         <div class="flex item-center justify-center pt-[400px]">
           <div class="card scoreBoxBackground w-96 shadow-xl">
             <div class="card-body">
               <h2 class="text-center font-bold text-5xl">Score : 14</h2>
-              <div class="card-actions ">
+              <div class="card-actions">
                 <div class="py-5 m-auto">
                   <button
                     class="btn text-2xl border-0 bg-white text-black hover:bg-black hover:text-white px-6"
@@ -245,7 +255,9 @@
                   </button>
                 </div>
               </div>
-              <p class="text-center text-white text-2xl">Practice will make you Pro</p>
+              <p class="text-center text-white text-2xl">
+                Practice will make you Pro
+              </p>
             </div>
           </div>
         </div>
@@ -253,5 +265,6 @@
     </main>
 
     <script src="alphabet.js"></script>
+    <script src="utlitey.js"></script>
   </body>
 </html>
